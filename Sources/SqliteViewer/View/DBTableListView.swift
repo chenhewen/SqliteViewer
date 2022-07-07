@@ -9,10 +9,10 @@
 import SwiftUI
 
 public struct DBTableListView: View {
-    var dbModel = DBModel(databaseName: "BookStore.sqlite")
+    var dbModel: DBModel
     
-    public init() {
-        
+    public init(dbModel: DBModel) {
+        self.dbModel = dbModel
     }
     
     public var body: some View {

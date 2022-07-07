@@ -30,7 +30,7 @@ public struct DBModel {
     //var tableController: TableController // = "ZBOOKENTITY"
     var tableModels: [TableModel] = []
     
-    init(databaseName: String) {
+    public init(databaseName: String) {
         dbController = DBController(databaseName: databaseName)
         let names = dbController.getTableNames()
         for name in names {
