@@ -28,5 +28,9 @@ public struct DBTableListView: View {
             }
         }
     }
+    
+    mutating public func refresh(dbModel: DBModel) {
+        self.dbModel = dbModel
+    }
 }
 #endif
